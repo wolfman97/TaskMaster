@@ -12,3 +12,13 @@ datasource db {
   provider = "postgresql"
   url      = env("DATABASE_URL")
 }
+
+model Back {
+  id Int @id @default(autoincrement())
+  name String @unique
+  description String?
+  fechaV String
+  estado String
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}

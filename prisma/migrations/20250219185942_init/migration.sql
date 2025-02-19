@@ -1,0 +1,2 @@
+-- AlterTable
+ALTER TABLE "Back" ALTER COLUMN "fechaV" SET DATA TYPE TEXT;
